@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name Custom_Symbols)(type Legacy)(uri ${KIPRJMOD}/Custom_Symbols.lib)(options "")(descr ""))
+  (lib (name color_sensor_electrical)(type Legacy)(uri ${KIPRJMOD}/color_sensor_electrical.lib)(options "")(descr ""))
+)

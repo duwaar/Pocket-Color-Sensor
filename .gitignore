@@ -1,5 +1,3 @@
 \.vscode/*
-src/*
-test/*
-color_sensor_electrical/*
+IGNORE*
 

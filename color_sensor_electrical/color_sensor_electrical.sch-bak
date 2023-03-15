@@ -1,0 +1,679 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "COLOR SENSOR CIRCUITRY"
+Date ""
+Rev "A"
+Comp "E. JEFFERY"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Microchip_ATmega:ATmega328P-AU U1
+U 1 1 6338F79B
+P 2250 3250
+F 0 "U1" H 2850 4900 50  0000 C CNN
+F 1 "ATmega328P-AU" H 2850 4800 50  0000 C CNN
+F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 2250 3250 50  0001 C CIN
+F 3 "~" H 2250 3250 50  0001 C CNN
+F 4 "ATMEGA328-AURCT-ND" H 2250 3250 50  0001 C CNN "S1PN"
+F 5 "https://www.digikey.com/en/products/detail/microchip-technology/ATMEGA328-AUR/2271023" H 2250 3250 50  0001 C CNN "S1URL"
+F 6 "cut-tape" H 2250 3250 50  0001 C CNN "Packaging"
+	1    2250 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Custom_Symbols:TCS3200D-TR U3
+U 1 1 633A5858
+P 5900 2800
+F 0 "U3" H 6300 3750 50  0000 C CNN
+F 1 "TCS3200D-TR" H 6300 3650 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5900 2800 50  0001 C CNN
+F 3 "~" H 5900 2800 50  0001 C CNN
+F 4 "~" H 5900 2800 50  0001 C CNN "Packaging"
+F 5 "~" H 5900 2800 50  0001 C CNN "S1PN"
+F 6 "https://www.ebay.com/itm/334755914584?hash=item4df101e358:g:Ch8AAOSwYCFj8vCA&amdata=enc%3AAQAHAAAA4HsWKrQg8PPV9zQFXpLYNZ69vesXMQbVOav%2BrDejHbEzoWwMb5PG%2FO%2By%2FUAk%2B681pf2l8tl4NcKFBYrgxGnkJ7xTesyCnL%2B2v7mtMWjcgY9EPwlorSTr5IKKLx4yvLhUg%2FwcIaoCpxS5xFWkpXqcWYggQPjP2Gs33gpO3zn12JDYW8zmSd%2FhzPaJjDq%2F4UtGsByGrd5%2BG%2F1PgnRdbuxuPH4r8KF47MXDBf1pNP%2Bn%2BC1xTYD2vnet4hm3qsxRY9BQ9imXn3jMCUrMZ5j4APFjU1Dci69ji85iZmvYU%2FM03KH9%7Ctkp%3ABFBMxPLp8tlh" H 5900 2800 50  0001 C CNN "S1URL"
+	1    5900 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR011
+U 1 1 633A62B6
+P 5900 2000
+F 0 "#PWR011" H 5900 1850 50  0001 C CNN
+F 1 "+5V" H 5915 2173 50  0000 C CNN
+F 2 "" H 5900 2000 50  0001 C CNN
+F 3 "" H 5900 2000 50  0001 C CNN
+	1    5900 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR03
+U 1 1 633A6A89
+P 2250 1750
+F 0 "#PWR03" H 2250 1600 50  0001 C CNN
+F 1 "+5V" H 2265 1923 50  0000 C CNN
+F 2 "" H 2250 1750 50  0001 C CNN
+F 3 "" H 2250 1750 50  0001 C CNN
+	1    2250 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR012
+U 1 1 633A74E0
+P 5900 2700
+F 0 "#PWR012" H 5900 2450 50  0001 C CNN
+F 1 "GND" H 5905 2527 50  0000 C CNN
+F 2 "" H 5900 2700 50  0001 C CNN
+F 3 "" H 5900 2700 50  0001 C CNN
+	1    5900 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 633A7EC9
+P 2250 4750
+F 0 "#PWR04" H 2250 4500 50  0001 C CNN
+F 1 "GND" H 2255 4577 50  0000 C CNN
+F 2 "" H 2250 4750 50  0001 C CNN
+F 3 "" H 2250 4750 50  0001 C CNN
+	1    2250 4750
+	1    0    0    -1  
+$EndComp
+Text GLabel 2850 3550 2    50   Input ~ 0
+RST
+Text GLabel 2850 3750 2    50   Input ~ 0
+PIN_0_(RX)
+Text GLabel 2850 3850 2    50   Input ~ 0
+PIN_1_(TX)
+Text GLabel 2850 3950 2    50   Input ~ 0
+PIN_2
+Text GLabel 2850 4050 2    50   Input ~ 0
+PIN_3
+Text GLabel 2850 4150 2    50   Input ~ 0
+PIN_4
+Text GLabel 2850 4250 2    50   Input ~ 0
+PIN_5
+Text GLabel 2850 4350 2    50   Input ~ 0
+PIN_6
+Text GLabel 2850 4450 2    50   Input ~ 0
+PIN_7
+Wire Wire Line
+	2350 1750 2250 1750
+Connection ~ 2250 1750
+Text GLabel 2850 3350 2    50   Input ~ 0
+PIN_A4
+Text GLabel 2850 3450 2    50   Input ~ 0
+PIN_A5
+Text GLabel 6750 2450 2    50   Input ~ 0
+PIN_2
+Text GLabel 5550 2450 0    50   Input ~ 0
+PIN_3
+Text GLabel 5550 2250 0    50   Input ~ 0
+PIN_4
+Text GLabel 5550 2350 0    50   Input ~ 0
+PIN_5
+Text GLabel 6250 2350 2    50   Input ~ 0
+PIN_6
+Text GLabel 6250 2250 2    50   Input ~ 0
+PIN_7
+$Comp
+L Connector:Conn_01x06_Female J2
+U 1 1 633FBF65
+P 8500 3500
+F 0 "J2" H 8350 3950 50  0000 L CNN
+F 1 "FTDI_header" H 7950 3850 50  0000 L CNN
+F 2 "Connector_PinSocket_1.00mm:PinSocket_1x06_P1.00mm_Vertical" H 8500 3500 50  0001 C CNN
+F 3 "~" H 8500 3500 50  0001 C CNN
+F 4 "bulk" H 8500 3500 50  0001 C CNN "Packaging"
+F 5 "S1112EC-06-ND" H 8500 3500 50  0001 C CNN "S1PN"
+F 6 "https://www.digikey.com/en/products/detail/sullins-connector-solutions/PREC006SBAN-M71RC/2774928" H 8500 3500 50  0001 C CNN "S1URL"
+	1    8500 3500
+	1    0    0    -1  
+$EndComp
+Text GLabel 8100 3500 0    50   Input ~ 0
+PIN_0_(RX)
+Text GLabel 8100 3600 0    50   Input ~ 0
+PIN_1_(TX)
+$Comp
+L Device:C C2
+U 1 1 634142D5
+P 6250 5100
+F 0 "C2" H 6365 5146 50  0000 L CNN
+F 1 "1 uF" H 6365 5055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6288 4950 50  0001 C CNN
+F 3 "~" H 6250 5100 50  0001 C CNN
+F 4 "cut-tape" H 6250 5100 50  0001 C CNN "Packaging"
+F 5 "1276-1066-1-ND" H 6250 5100 50  0001 C CNN "S1PN"
+F 6 "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21B105KAFNNNE/3886724" H 6250 5100 50  0001 C CNN "S1URL"
+	1    6250 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 63422CB9
+P 6400 2450
+F 0 "R1" V 6500 2450 50  0000 C CNN
+F 1 "1k" V 6600 2450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6330 2450 50  0001 C CNN
+F 3 "~" H 6400 2450 50  0001 C CNN
+F 4 "cut-tape" H 6400 2450 50  0001 C CNN "Packaging"
+F 5 "RNCP0805FTD1K00CT-ND" H 6400 2450 50  0001 C CNN "S1PN"
+F 6 "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RNCP0805FTD1K00/2240229" H 6400 2450 50  0001 C CNN "S1URL"
+	1    6400 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Battery BT3
+U 1 1 6342FC26
+P 4600 5150
+F 0 "BT3" H 4708 5196 50  0000 L CNN
+F 1 "Battery holder" H 4708 5105 50  0000 L CNN
+F 2 "color_sensor_electrical:Battery_holder_2xCR2032_smd" V 4600 5210 50  0001 C CNN
+F 3 "~" V 4600 5210 50  0001 C CNN
+F 4 "bulk" H 4600 5150 50  0001 C CNN "Packaging"
+F 5 "36-3074-ND" H 4600 5150 50  0001 C CNN "S1PN"
+F 6 "https://www.digikey.com/en/products/detail/keystone-electronics/3074/4499294" H 4600 5150 50  0001 C CNN "S1URL"
+	1    4600 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 63432252
+P 4600 5350
+F 0 "#PWR02" H 4600 5100 50  0001 C CNN
+F 1 "GND" H 4605 5177 50  0000 C CNN
+F 2 "" H 4600 5350 50  0001 C CNN
+F 3 "" H 4600 5350 50  0001 C CNN
+	1    4600 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR09
+U 1 1 634329F2
+P 8300 4800
+F 0 "#PWR09" H 8300 4650 50  0001 C CNN
+F 1 "+5V" H 8315 4973 50  0000 C CNN
+F 2 "" H 8300 4800 50  0001 C CNN
+F 3 "" H 8300 4800 50  0001 C CNN
+	1    8300 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR016
+U 1 1 634876E8
+P 8200 3900
+F 0 "#PWR016" H 8200 3650 50  0001 C CNN
+F 1 "GND" H 8205 3727 50  0000 C CNN
+F 2 "" H 8200 3900 50  0001 C CNN
+F 3 "" H 8200 3900 50  0001 C CNN
+	1    8200 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 3400 8200 3400
+Wire Wire Line
+	8200 3400 8200 3800
+Wire Wire Line
+	8300 3800 8200 3800
+Connection ~ 8200 3800
+Wire Wire Line
+	8200 3800 8200 3900
+Wire Wire Line
+	8100 3500 8300 3500
+Wire Wire Line
+	8300 3600 8100 3600
+NoConn ~ 8300 3300
+Wire Wire Line
+	7200 3700 7450 3700
+$Comp
+L Device:R R2
+U 1 1 634ADE47
+P 7450 3450
+F 0 "R2" H 7600 3400 50  0000 C CNN
+F 1 "10k" H 7600 3500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7380 3450 50  0001 C CNN
+F 3 "~" H 7450 3450 50  0001 C CNN
+F 4 "cut-tape" H 7450 3450 50  0001 C CNN "Packaging"
+F 5 "RNCP0805FTD10K0CT-ND" H 7450 3450 50  0001 C CNN "S1PN"
+F 6 "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RNCP0805FTD10K0/2240262" H 7450 3450 50  0001 C CNN "S1URL"
+	1    7450 3450
+	-1   0    0    1   
+$EndComp
+Connection ~ 7450 3700
+Wire Wire Line
+	7450 3700 8300 3700
+$Comp
+L power:+5V #PWR013
+U 1 1 634B1586
+P 7450 3300
+F 0 "#PWR013" H 7450 3150 50  0001 C CNN
+F 1 "+5V" H 7465 3473 50  0000 C CNN
+F 2 "" H 7450 3300 50  0001 C CNN
+F 3 "" H 7450 3300 50  0001 C CNN
+	1    7450 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 3600 7450 3700
+Text GLabel 6900 3700 0    50   Input ~ 0
+RST
+$Comp
+L power:GND #PWR01
+U 1 1 634C27F7
+P 1050 2150
+F 0 "#PWR01" H 1050 1900 50  0001 C CNN
+F 1 "GND" H 1055 1977 50  0000 C CNN
+F 2 "" H 1050 2150 50  0001 C CNN
+F 3 "" H 1050 2150 50  0001 C CNN
+	1    1050 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 2050 1050 2050
+Wire Wire Line
+	1050 2050 1050 2150
+Wire Wire Line
+	1450 2050 1650 2050
+$Comp
+L Device:Resonator Y1
+U 1 1 634CB4BB
+P 3150 2700
+F 0 "Y1" V 3400 2650 50  0000 L CNN
+F 1 "Resonator" V 3350 2500 50  0000 L CNN
+F 2 "color_sensor_electrical:Resonator_CSTNE20M0V530000R0_smd_hand-solder" H 3125 2700 50  0001 C CNN
+F 3 "~" H 3125 2700 50  0001 C CNN
+F 4 "cut-tape" H 3150 2700 50  0001 C CNN "Packaging"
+F 5 "490-17953-1-ND" H 3150 2700 50  0001 C CNN "S1PN"
+F 6 "https://www.digikey.com/en/products/detail/murata-electronics/CSTNE20M0V530000R0/8747734" H 3150 2700 50  0001 C CNN "S1URL"
+	1    3150 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 634DAB9F
+P 3450 2800
+F 0 "#PWR08" H 3450 2550 50  0001 C CNN
+F 1 "GND" H 3455 2627 50  0000 C CNN
+F 2 "" H 3450 2800 50  0001 C CNN
+F 3 "" H 3450 2800 50  0001 C CNN
+	1    3450 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 2550 3150 2550
+Wire Wire Line
+	2950 2850 3150 2850
+Wire Wire Line
+	3350 2700 3450 2700
+Wire Wire Line
+	3450 2700 3450 2800
+$Comp
+L Device:C C4
+U 1 1 635036CC
+P 7050 3700
+F 0 "C4" V 6798 3700 50  0000 C CNN
+F 1 "1 uF" V 6889 3700 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 7088 3550 50  0001 C CNN
+F 3 "~" H 7050 3700 50  0001 C CNN
+F 4 "cut-tape" H 7050 3700 50  0001 C CNN "Packaging"
+F 5 "1276-1066-1-ND" H 7050 3700 50  0001 C CNN "S1PN"
+F 6 "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21B105KAFNNNE/3886724" H 7050 3700 50  0001 C CNN "S1URL"
+	1    7050 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 635040FB
+P 1300 2050
+F 0 "C1" V 1048 2050 50  0000 C CNN
+F 1 "1 uF" V 1139 2050 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1338 1900 50  0001 C CNN
+F 3 "~" H 1300 2050 50  0001 C CNN
+F 4 "cut-tape" H 1300 2050 50  0001 C CNN "Packaging"
+F 5 "1276-1066-1-ND" H 1300 2050 50  0001 C CNN "S1PN"
+F 6 "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21B105KAFNNNE/3886724" H 1300 2050 50  0001 C CNN "S1URL"
+	1    1300 2050
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 635A28B0
+P 6250 5250
+F 0 "#PWR05" H 6250 5000 50  0001 C CNN
+F 1 "GND" H 6255 5077 50  0000 C CNN
+F 2 "" H 6250 5250 50  0001 C CNN
+F 3 "" H 6250 5250 50  0001 C CNN
+	1    6250 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR010
+U 1 1 635B7E26
+P 8300 5250
+F 0 "#PWR010" H 8300 5000 50  0001 C CNN
+F 1 "GND" H 8305 5077 50  0000 C CNN
+F 2 "" H 8300 5250 50  0001 C CNN
+F 3 "" H 8300 5250 50  0001 C CNN
+	1    8300 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 4950 8300 4800
+Wire Wire Line
+	4600 4850 4850 4850
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 640D9612
+P 3950 5050
+F 0 "BT1" H 4068 5146 50  0000 L CNN
+F 1 "CR2032" H 4068 5055 50  0000 L CNN
+F 2 "" V 3950 5110 50  0001 C CNN
+F 3 "~" V 3950 5110 50  0001 C CNN
+F 4 "bulk" H 3950 5050 50  0001 C CNN "Packaging"
+F 5 "3046-2032-ND" H 3950 5050 50  0001 C CNN "S1PN"
+F 6 "https://www.digikey.com/en/products/detail/duracell-industrial-operations-inc/2032/13280369" H 3950 5050 50  0001 C CNN "S1URL"
+	1    3950 5050
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3950 4850
+NoConn ~ 3950 5150
+$Comp
+L Device:Battery_Cell BT2
+U 1 1 640E6B3E
+P 3950 5500
+F 0 "BT2" H 4068 5596 50  0000 L CNN
+F 1 "CR2032" H 4068 5505 50  0000 L CNN
+F 2 "" V 3950 5560 50  0001 C CNN
+F 3 "~" V 3950 5560 50  0001 C CNN
+F 4 "bulk" H 3950 5500 50  0001 C CNN "Packaging"
+F 5 "3046-2032-ND" H 3950 5500 50  0001 C CNN "S1PN"
+F 6 "https://www.digikey.com/en/products/detail/duracell-industrial-operations-inc/2032/13280369" H 3950 5500 50  0001 C CNN "S1URL"
+	1    3950 5500
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3950 5300
+NoConn ~ 3950 5600
+$Comp
+L Device:C C3
+U 1 1 640F094E
+P 8300 5100
+F 0 "C3" H 8415 5146 50  0000 L CNN
+F 1 "1 uF" H 8415 5055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8338 4950 50  0001 C CNN
+F 3 "~" H 8300 5100 50  0001 C CNN
+F 4 "cut-tape" H 8300 5100 50  0001 C CNN "Packaging"
+F 5 "1276-1066-1-ND" H 8300 5100 50  0001 C CNN "S1PN"
+F 6 "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21B105KAFNNNE/3886724" H 8300 5100 50  0001 C CNN "S1URL"
+	1    8300 5100
+	1    0    0    -1  
+$EndComp
+Connection ~ 8300 4950
+$Comp
+L Connector:TestPoint TP1
+U 1 1 640F1EED
+P 5900 4800
+F 0 "TP1" H 5958 4918 50  0000 L CNN
+F 1 "TestPoint" H 5958 4827 50  0000 L CNN
+F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 6100 4800 50  0001 C CNN
+F 3 "~" H 6100 4800 50  0001 C CNN
+F 4 "~" H 5900 4800 50  0001 C CNN "Packaging"
+F 5 "~" H 5900 4800 50  0001 C CNN "S1PN"
+F 6 "~" H 5900 4800 50  0001 C CNN "S1URL"
+	1    5900 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 640F3063
+P 8550 4950
+F 0 "TP2" H 8608 5068 50  0000 L CNN
+F 1 "TestPoint" H 8608 4977 50  0000 L CNN
+F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 8750 4950 50  0001 C CNN
+F 3 "~" H 8750 4950 50  0001 C CNN
+F 4 "~" H 8550 4950 50  0001 C CNN "Packaging"
+F 5 "~" H 8550 4950 50  0001 C CNN "S1PN"
+F 6 "~" H 8550 4950 50  0001 C CNN "S1URL"
+	1    8550 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 4950 8550 4950
+Wire Wire Line
+	5900 4800 5900 4950
+$Comp
+L color_sensor_electrical:S-1133B50-U5T1U U2
+U 1 1 64117695
+P 7100 4950
+F 0 "U2" H 7100 5365 50  0000 C CNN
+F 1 "S-1133B50-U5T1U" H 7100 5274 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-89-5_Handsoldering" H 7100 4950 50  0001 C CNN
+F 3 "~" H 7100 4950 50  0001 C CNN
+F 4 "1662-2896-1-ND" H 7100 4950 50  0001 C CNN "S1PN"
+F 5 "https://www.digikey.com/en/products/detail/ablic-inc/S-1133B50-U5T1U/6112890" H 7100 4950 50  0001 C CNN "S1URL"
+F 6 "cut-tape" H 7100 4950 50  0001 C CNN "Packaging"
+	1    7100 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 4950 6250 4950
+Wire Wire Line
+	7550 4950 8300 4950
+$Comp
+L power:GND #PWR06
+U 1 1 64119ADF
+P 7100 5300
+F 0 "#PWR06" H 7100 5050 50  0001 C CNN
+F 1 "GND" H 7105 5127 50  0000 C CNN
+F 2 "" H 7100 5300 50  0001 C CNN
+F 3 "" H 7100 5300 50  0001 C CNN
+	1    7100 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 64121BA3
+P 7700 5100
+F 0 "#PWR07" H 7700 4850 50  0001 C CNN
+F 1 "GND" H 7705 4927 50  0000 C CNN
+F 2 "" H 7700 5100 50  0001 C CNN
+F 3 "" H 7700 5100 50  0001 C CNN
+	1    7700 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 4800 7700 4800
+Wire Wire Line
+	7700 4800 7700 5100
+$Comp
+L Connector:Conn_01x04_Female J1
+U 1 1 64132970
+P 8500 2400
+F 0 "J1" H 8350 2700 50  0000 L CNN
+F 1 "OLED_header" H 8050 2600 50  0000 L CNN
+F 2 "Connector_PinSocket_1.00mm:PinSocket_1x04_P1.00mm_Vertical" H 8500 2400 50  0001 C CNN
+F 3 "~" H 8500 2400 50  0001 C CNN
+F 4 "~" H 8500 2400 50  0001 C CNN "Packaging"
+F 5 "~" H 8500 2400 50  0001 C CNN "S1PN"
+F 6 "https://www.ebay.com/itm/324467747224?hash=item4b8bc8e998:g:hsQAAOSwshpiAaiH&amdata=enc%3AAQAHAAAA4CqYeaGSDirWoE9VIafTC27Vhc%2BvTk7bivJZcBXcVnaEEXZH538aio8MoTNvRvGObQVg%2FZTq2lCD0siw9ClKiLym1XV%2FgItZY7QwX9w1oqCgK5VM3aADWjygOugXuz%2FOINeYMq4SvZEffxrNg54vb503XB%2FjauSBx3j%2FqymjQQdMHuJ%2FiN0e3%2FW2nAtBjjBZzER8yHAw7OS2M0znPAREQGi%2BtRCoLaBbriy7kazn5WJw87q7c4%2FbLe0v%2F0nMR%2B1E6L2RI4ZGab9q%2FZbk1k4uTW7ebt1RFZguqgqOK1cKXtbk%7Ctkp%3ABFBMiqyswtph" H 8500 2400 50  0001 C CNN "S1URL"
+	1    8500 2400
+	1    0    0    -1  
+$EndComp
+Text GLabel 8300 2300 0    50   Input ~ 0
+PIN_A4
+Text GLabel 8300 2400 0    50   Input ~ 0
+PIN_A5
+$Comp
+L power:+5V #PWR014
+U 1 1 64152A25
+P 7800 2500
+F 0 "#PWR014" H 7800 2350 50  0001 C CNN
+F 1 "+5V" H 7815 2673 50  0000 C CNN
+F 2 "" H 7800 2500 50  0001 C CNN
+F 3 "" H 7800 2500 50  0001 C CNN
+	1    7800 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR015
+U 1 1 64153666
+P 8150 2600
+F 0 "#PWR015" H 8150 2350 50  0001 C CNN
+F 1 "GND" H 8155 2427 50  0000 C CNN
+F 2 "" H 8150 2600 50  0001 C CNN
+F 3 "" H 8150 2600 50  0001 C CNN
+	1    8150 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 2600 8150 2600
+Wire Wire Line
+	8300 2500 7800 2500
+NoConn ~ 1650 2250
+NoConn ~ 1650 2350
+NoConn ~ 2850 2050
+NoConn ~ 2850 2450
+NoConn ~ 2850 2950
+NoConn ~ 2850 3050
+NoConn ~ 2850 3150
+NoConn ~ 2850 3250
+Text Notes 8950 2600 0    50   ~ 0
+OLED display header\n1. SDA\n2. SCK\n3. VCC\n4. GND
+Text Notes 8950 3800 0    50   ~ 0
+FTDI programmer header\n1. VCC\n2. GND\n3. TXD\n4. RXD\n5. RTS\n6. CTS
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 6419D2FC
+P 5550 4850
+F 0 "#FLG0101" H 5550 4925 50  0001 C CNN
+F 1 "PWR_FLAG" H 5550 5023 50  0000 C CNN
+F 2 "" H 5550 4850 50  0001 C CNN
+F 3 "~" H 5550 4850 50  0001 C CNN
+	1    5550 4850
+	1    0    0    -1  
+$EndComp
+Connection ~ 5900 4950
+Wire Wire Line
+	5250 4950 5550 4950
+Connection ~ 6250 4950
+Wire Wire Line
+	5900 4950 6250 4950
+Wire Wire Line
+	5550 4850 5550 4950
+Connection ~ 5550 4950
+Wire Wire Line
+	5550 4950 5900 4950
+$Comp
+L power:GND #PWR0101
+U 1 1 641C10CF
+P 5650 5650
+F 0 "#PWR0101" H 5650 5400 50  0001 C CNN
+F 1 "GND" H 5655 5477 50  0000 C CNN
+F 2 "" H 5650 5650 50  0001 C CNN
+F 3 "" H 5650 5650 50  0001 C CNN
+	1    5650 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 641C175D
+P 5650 5650
+F 0 "#FLG0102" H 5650 5725 50  0001 C CNN
+F 1 "PWR_FLAG" H 5650 5823 50  0000 C CNN
+F 2 "" H 5650 5650 50  0001 C CNN
+F 3 "~" H 5650 5650 50  0001 C CNN
+	1    5650 5650
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2850 2150
+NoConn ~ 2850 2250
+NoConn ~ 2850 2350
+NoConn ~ 2850 2550
+$Comp
+L Device:C C5
+U 1 1 641EC298
+P 4750 2350
+F 0 "C5" H 4865 2396 50  0000 L CNN
+F 1 "1 uF" H 4865 2305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4788 2200 50  0001 C CNN
+F 3 "~" H 4750 2350 50  0001 C CNN
+F 4 "cut-tape" H 4750 2350 50  0001 C CNN "Packaging"
+F 5 "1276-1066-1-ND" H 4750 2350 50  0001 C CNN "S1PN"
+F 6 "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21B105KAFNNNE/3886724" H 4750 2350 50  0001 C CNN "S1URL"
+	1    4750 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0102
+U 1 1 641EDB73
+P 4750 2200
+F 0 "#PWR0102" H 4750 2050 50  0001 C CNN
+F 1 "+5V" H 4765 2373 50  0000 C CNN
+F 2 "" H 4750 2200 50  0001 C CNN
+F 3 "" H 4750 2200 50  0001 C CNN
+	1    4750 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 641EE58F
+P 4750 2500
+F 0 "#PWR0103" H 4750 2250 50  0001 C CNN
+F 1 "GND" H 4755 2327 50  0000 C CNN
+F 2 "" H 4750 2500 50  0001 C CNN
+F 3 "" H 4750 2500 50  0001 C CNN
+	1    4750 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 2550 2950 2650
+Wire Wire Line
+	2950 2650 2850 2650
+Wire Wire Line
+	2950 2850 2950 2750
+Wire Wire Line
+	2950 2750 2850 2750
+$Comp
+L Connector:TestPoint TP3
+U 1 1 642F63CD
+P 6650 2350
+F 0 "TP3" H 6708 2468 50  0000 L CNN
+F 1 "TestPoint" H 6708 2377 50  0000 L CNN
+F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 6850 2350 50  0001 C CNN
+F 3 "~" H 6850 2350 50  0001 C CNN
+F 4 "~" H 6650 2350 50  0001 C CNN "Packaging"
+F 5 "~" H 6650 2350 50  0001 C CNN "S1PN"
+F 6 "~" H 6650 2350 50  0001 C CNN "S1URL"
+	1    6650 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 2450 6650 2450
+Wire Wire Line
+	6650 2350 6650 2450
+Connection ~ 6650 2450
+Wire Wire Line
+	6650 2450 6750 2450
+$Comp
+L Switch:SW_SPDT SW1
+U 1 1 6430F69B
+P 5050 4850
+F 0 "SW1" H 5050 5135 50  0000 C CNN
+F 1 "SW_SPDT" H 5050 5044 50  0000 C CNN
+F 2 "color_sensor_electrical:Switch_1825232-1_SPDT" H 5050 4850 50  0001 C CNN
+F 3 "~" H 5050 4850 50  0001 C CNN
+F 4 "A107673-ND" H 5050 4850 50  0001 C CNN "S1PN"
+F 5 "https://www.digikey.com/en/products/detail/te-connectivity-alcoswitch-switches/1825232-1/4021554" H 5050 4850 50  0001 C CNN "S1URL"
+F 6 "bulk" H 5050 4850 50  0001 C CNN "Packaging"
+	1    5050 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 4850 4600 4950
+NoConn ~ 5250 4750
+$EndSCHEMATC

@@ -1,0 +1,14 @@
+Reference,Qty. (1 Board),Qty. Total, Value, Footprint, Datasheet, Packaging, S1PN, S1URL
+BT1 BT2 ,2,20,CR2032,,~,bulk,3046-2032-ND,https://www.digikey.com/en/products/detail/duracell-industrial-operations-inc/2032/13280369
+BT3 ,1,10,Battery holder,color_sensor_electrical:Battery_holder_2xCR2032_smd,~,bulk,36-3074-ND,https://www.digikey.com/en/products/detail/keystone-electronics/3074/4499294
+C1 C2 C3 C4 C5 ,5,50,1 uF,Capacitor_SMD:C_0805_2012Metric,~,cut-tape,1276-1066-1-ND,https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21B105KAFNNNE/3886724
+J1 ,1,10,OLED_header,Connector_PinSocket_1.00mm:PinSocket_1x04_P1.00mm_Vertical,~,~,~,https://www.ebay.com/itm/324467747224?hash=item4b8bc8e998:g:hsQAAOSwshpiAaiH&amdata=enc%3AAQAHAAAA4CqYeaGSDirWoE9VIafTC27Vhc%2BvTk7bivJZcBXcVnaEEXZH538aio8MoTNvRvGObQVg%2FZTq2lCD0siw9ClKiLym1XV%2FgItZY7QwX9w1oqCgK5VM3aADWjygOugXuz%2FOINeYMq4SvZEffxrNg54vb503XB%2FjauSBx3j%2FqymjQQdMHuJ%2FiN0e3%2FW2nAtBjjBZzER8yHAw7OS2M0znPAREQGi%2BtRCoLaBbriy7kazn5WJw87q7c4%2FbLe0v%2F0nMR%2B1E6L2RI4ZGab9q%2FZbk1k4uTW7ebt1RFZguqgqOK1cKXtbk%7Ctkp%3ABFBMiqyswtph
+J2 ,1,10,FTDI_header,Connector_PinSocket_1.00mm:PinSocket_1x06_P1.00mm_Vertical,~,bulk,S1112EC-06-ND,https://www.digikey.com/en/products/detail/sullins-connector-solutions/PREC006SBAN-M71RC/2774928
+R1 ,1,10,1k,Resistor_SMD:R_0805_2012Metric,~,cut-tape,RNCP0805FTD1K00CT-ND,https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RNCP0805FTD1K00/2240229
+R2 ,1,10,10k,Resistor_SMD:R_0805_2012Metric,~,cut-tape,RNCP0805FTD10K0CT-ND,https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RNCP0805FTD10K0/2240262
+SW1 ,1,10,SW_SPDT,color_sensor_electrical:Switch_1825232-1_SPDT,~,bulk,A107673-ND,https://www.digikey.com/en/products/detail/te-connectivity-alcoswitch-switches/1825232-1/4021554
+TP1 TP2 TP3 ,3,30,TestPoint,Connector_Pin:Pin_D1.0mm_L10.0mm,~,~,~,~
+U1 ,1,10,ATmega328P-AU,Package_QFP:TQFP-32_7x7mm_P0.8mm,~,cut-tape,ATMEGA328-AURCT-ND,https://www.digikey.com/en/products/detail/microchip-technology/ATMEGA328-AUR/2271023
+U2 ,1,10,S-1133B50-U5T1U,Package_TO_SOT_SMD:SOT-89-5_Handsoldering,~,cut-tape,1662-2896-1-ND,https://www.digikey.com/en/products/detail/ablic-inc/S-1133B50-U5T1U/6112890
+U3 ,1,10,TCS3200D-TR,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,~,~,~,https://www.ebay.com/itm/334755914584?hash=item4df101e358:g:Ch8AAOSwYCFj8vCA&amdata=enc%3AAQAHAAAA4HsWKrQg8PPV9zQFXpLYNZ69vesXMQbVOav%2BrDejHbEzoWwMb5PG%2FO%2By%2FUAk%2B681pf2l8tl4NcKFBYrgxGnkJ7xTesyCnL%2B2v7mtMWjcgY9EPwlorSTr5IKKLx4yvLhUg%2FwcIaoCpxS5xFWkpXqcWYggQPjP2Gs33gpO3zn12JDYW8zmSd%2FhzPaJjDq%2F4UtGsByGrd5%2BG%2F1PgnRdbuxuPH4r8KF47MXDBf1pNP%2Bn%2BC1xTYD2vnet4hm3qsxRY9BQ9imXn3jMCUrMZ5j4APFjU1Dci69ji85iZmvYU%2FM03KH9%7Ctkp%3ABFBMxPLp8tlh
+Y1 ,1,10,Resonator,color_sensor_electrical:Resonator_CSTNE20M0V530000R0_smd_hand-solder,~,cut-tape,490-17953-1-ND,https://www.digikey.com/en/products/detail/murata-electronics/CSTNE20M0V530000R0/8747734
