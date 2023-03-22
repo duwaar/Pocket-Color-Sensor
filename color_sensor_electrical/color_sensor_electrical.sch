@@ -128,7 +128,7 @@ U 1 1 633FBF65
 P 8500 3500
 F 0 "J2" H 8350 3950 50  0000 L CNN
 F 1 "FTDI_header" H 7950 3850 50  0000 L CNN
-F 2 "Connector_PinSocket_1.00mm:PinSocket_1x06_P1.00mm_Vertical" H 8500 3500 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 8500 3500 50  0001 C CNN
 F 3 "~" H 8500 3500 50  0001 C CNN
 F 4 "bulk" H 8500 3500 50  0001 C CNN "Packaging"
 F 5 "S1112EC-06-ND" H 8500 3500 50  0001 C CNN "S1PN"
@@ -496,7 +496,7 @@ U 1 1 64132970
 P 8500 2400
 F 0 "J1" H 8350 2700 50  0000 L CNN
 F 1 "OLED_header" H 8050 2600 50  0000 L CNN
-F 2 "Connector_PinSocket_1.00mm:PinSocket_1x04_P1.00mm_Vertical" H 8500 2400 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 8500 2400 50  0001 C CNN
 F 3 "~" H 8500 2400 50  0001 C CNN
 F 4 "~" H 8500 2400 50  0001 C CNN "Packaging"
 F 5 "~" H 8500 2400 50  0001 C CNN "S1PN"
