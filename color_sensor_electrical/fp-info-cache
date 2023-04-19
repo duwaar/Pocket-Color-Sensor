@@ -1,4 +1,4 @@
-18993370040533441
+18996732657025441
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -83034,12 +83034,26 @@ Battery_holder_2xCR2032_smd
 3
 2
 color_sensor_electrical
+PinSocket_1x04_P2.54mm_Vertical
+Through hole straight socket strip, 1x04, 2.54mm pitch, single row (from Kicad 4.0.7), script generated
+Through hole socket strip THT 1x04 2.54mm single row
+0
+4
+4
+color_sensor_electrical
 Resonator_CSTNE20M0V530000R0_smd_hand-solder
 
 
 0
 3
 3
+color_sensor_electrical
+SOT-89-5_Handsoldering
+SOT-89-5, http://www.e-devices.ricoh.co.jp/en/products/product_power/pkg/sot-89-5.pdf
+SOT-89-5
+0
+5
+5
 color_sensor_electrical
 Switch_1825232-1_SPDT
 

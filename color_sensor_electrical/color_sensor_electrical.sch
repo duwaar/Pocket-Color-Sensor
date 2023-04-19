@@ -452,7 +452,7 @@ U 1 1 64117695
 P 7100 4950
 F 0 "U2" H 7100 5365 50  0000 C CNN
 F 1 "S-1133B50-U5T1U" H 7100 5274 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-89-5_Handsoldering" H 7100 4950 50  0001 C CNN
+F 2 "color_sensor_electrical:SOT-89-5_Handsoldering" H 7100 4950 50  0001 C CNN
 F 3 "~" H 7100 4950 50  0001 C CNN
 F 4 "1662-2896-1-ND" H 7100 4950 50  0001 C CNN "S1PN"
 F 5 "https://www.digikey.com/en/products/detail/ablic-inc/S-1133B50-U5T1U/6112890" H 7100 4950 50  0001 C CNN "S1URL"
@@ -496,7 +496,7 @@ U 1 1 64132970
 P 8500 2400
 F 0 "J1" H 8350 2700 50  0000 L CNN
 F 1 "OLED_header" H 8050 2600 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 8500 2400 50  0001 C CNN
+F 2 "color_sensor_electrical:PinSocket_1x04_P2.54mm_Vertical" H 8500 2400 50  0001 C CNN
 F 3 "~" H 8500 2400 50  0001 C CNN
 F 4 "~" H 8500 2400 50  0001 C CNN "Packaging"
 F 5 "~" H 8500 2400 50  0001 C CNN "S1PN"
